@@ -1,121 +1,79 @@
 # 🏟️ Sports Complex Management System
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-C-blue.svg">
-  <img src="https://img.shields.io/badge/Platform-Console-green.svg">
-  <img src="https://img.shields.io/badge/Data%20Storage-File%20Handling-orange.svg">
-  <img src="https://img.shields.io/badge/Status-Completed-success.svg">
-</p>
+A **console-based Sports Complex Management System** developed in **C Programming Language** using **File Handling** concepts. The project is designed to simplify the management of sports facilities by providing separate interfaces for administrators and customers. It enables efficient game management, booking operations, schedule monitoring, and automated billing while maintaining persistent records through text files.
 
-## 📖 Project Overview
-
-The **Sports Complex Management System** is a console-based application developed in the **C Programming Language** using **File Handling** concepts.
-
-The system is designed to simplify the management of a university sports complex by allowing administrators to manage available sports, schedule bookings, maintain customer records, and calculate booking costs automatically.
-
-The project demonstrates the practical implementation of:
-
-- Structured Programming
-- File Handling
-- Modular Programming
-- Data Validation
-- Console-based User Interface
-- Real-world Sports Facility Management
+This project demonstrates the practical implementation of core C programming concepts, including structures, functions, file handling, string manipulation, input validation, and modular programming in a real-world management system.
 
 ---
 
-# 🎯 Objectives
+# 📖 Project Overview
 
-The primary objectives of this project are:
+Managing sports facility bookings manually can often lead to scheduling conflicts, inaccurate records, and inefficient administration. This system addresses those challenges by providing a simple yet organized console application that digitizes the booking process.
 
-- Automate sports facility booking.
-- Reduce manual record keeping.
-- Provide secure administrator access.
-- Manage sports and booking information efficiently.
-- Generate booking bills automatically.
-- Store booking information permanently using files.
+The application offers two separate user roles:
 
----
+* **Administrator** – Responsible for managing games, monitoring bookings, maintaining schedules, and controlling overall system operations through a secure login system.
+* **Customer** – Can browse available games, view booking schedules, and reserve sports facilities with automatic bill calculation.
 
-# ✨ Key Features
-
-## 👨‍💼 Admin Features
-
-- Secure Admin Login
-- Username & Password Authentication
-- Limited Login Attempts
-- Add New Sports/Game
-- Delete Existing Sports
-- View All Available Games
-- Book Slots for Walk-in Customers
-- View Complete Booking Schedule
-- View Confirmed Members
-- Cancel Booking Using Booking ID
+All booking information and game records are permanently stored in text files, allowing the system to preserve data even after the application is closed.
 
 ---
 
-## 👤 Customer Features
+# ✨ System Features
 
-- View Available Games
-- View Booking Schedule
-- Book Sports Slot
-- Automatic Bill Calculation
-- Booking Confirmation
-- Unique Booking ID Generation
+## 👨‍💼 Administrator Panel
 
----
-
-## 💰 Billing System
-
-The system automatically calculates:
-
-```
-Total Bill = Price Per Hour × Number of Hours
-```
-
-Example
-
-| Game | Price | Hours | Total |
-|------|--------|-------|-------|
-| Football | $20 | 3 | $60 |
+* Secure administrator authentication
+* Username and password verification
+* Maximum login attempt protection
+* Add new sports or games
+* Remove existing games
+* View all available sports
+* Create bookings for walk-in customers
+* View complete booking schedule
+* Display confirmed member list
+* Cancel bookings using Booking ID
 
 ---
 
-# 🔒 Admin Authentication
+## 👤 Customer Panel
 
-The project includes a secure login system.
-
-Default Credentials
-
-| Username | Password |
-|----------|----------|
-| admin | admin123 |
-
-Features
-
-- Username verification
-- Password verification
-- Maximum 3 login attempts
-- Unauthorized access prevention
+* View available sports
+* Check booking schedule
+* Reserve sports facilities
+* Receive a unique Booking ID
+* Automatic bill calculation based on booking duration
 
 ---
 
-# 📁 Data Storage
+# 💾 Data Management
 
-The project stores data using text files.
+The project uses **text file storage** to maintain persistent data.
 
-| File Name | Purpose |
-|------------|---------------------------|
-| games.txt | Stores all available games |
-| bookings.txt | Stores all confirmed bookings |
-| temp.txt | Temporary booking file |
-| temp_games.txt | Temporary game file |
+| File Name        | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| `games.txt`      | Stores available sports, hourly prices, and duration information |
+| `bookings.txt`   | Stores all confirmed booking records                             |
+| `temp.txt`       | Temporary file used during booking cancellation                  |
+| `temp_games.txt` | Temporary file used while deleting sports information            |
+
+---
+
+# ⚙️ Technologies Used
+
+* C Programming Language
+* File Handling
+* Structures
+* Functions
+* String Handling
+* Standard C Libraries
+* Time Library (`time.h`)
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 Sports-Complex-Management-System/
 │
 ├── main.c
@@ -123,190 +81,59 @@ Sports-Complex-Management-System/
 ├── bookings.txt
 ├── temp.txt
 ├── temp_games.txt
-├── README.md
+└── README.md
 ```
 
 ---
 
-# ⚙️ Technologies Used
+# 🎯 Core Functionalities
 
-- C Programming
-- File Handling
-- Structures
-- Functions
-- Conditional Statements
-- Loops
-- String Manipulation
-- Time Library
-- Console I/O
-
----
-
-# 📌 Modules
-
-### Admin Module
-
-- Login
-- Add Game
-- Delete Game
-- Book Game
-- View Games
-- View Schedule
-- Cancel Booking
-- View Members
+* Secure Admin Authentication
+* Sports Management
+* Booking Management
+* Schedule Monitoring
+* Member Management
+* Booking Cancellation
+* Automatic Billing
+* Booking ID Generation
+* Input Validation
+* Persistent File Storage
 
 ---
 
-### Customer Module
+# 👥 Team Contributions
 
-- View Schedule
-- Book Game
-- View Available Games
-
----
-
-### Booking Module
-
-- Booking Validation
-- Booking ID Generation
-- Bill Calculation
-- Schedule Management
-
----
-
-### Game Management Module
-
-- Add Game
-- Delete Game
-- View Games
-- Search Existing Game
-
----
-
-# 🧾 Booking Workflow
-
-```
-Customer
-      │
-      ▼
-View Available Games
-      │
-      ▼
-Select Game
-      │
-      ▼
-Enter Time Slot
-      │
-      ▼
-Duration Validation
-      │
-      ▼
-Calculate Bill
-      │
-      ▼
-Generate Booking ID
-      │
-      ▼
-Store into bookings.txt
-      │
-      ▼
-Booking Confirmed
-```
-
----
-
-# 🛡️ Validation
-
-The system validates:
-
-- Invalid Login
-- Invalid Game Name
-- Invalid Time Slot
-- Invalid Booking ID
-- Duplicate Wrong Inputs
-- Empty Booking Records
-
----
-
-# 📸 Sample Console Output
-
-```
-=========================================
-Daffodil University Sports Management System
-=========================================
-
-1. Admin
-2. Customer
-3. Exit
-
-Select Role:
-```
-
----
-
-# 🚀 Future Improvements
-
-The following features can be added in future versions:
-
-- Password Encryption
-- Customer Login System
-- Online Payment Integration
-- Monthly Revenue Report
-- Graphical User Interface (GUI)
-- Database (MySQL)
-- Booking Conflict Detection
-- Search Booking by Customer Name
-- Booking Update Option
-- Email Notifications
-
----
-
-# 👨‍💻 Team Contribution
-
-| Team Member | Student ID | Responsibilities | Contribution |
-|-------------|------------|-----------------|--------------|
-| **Abid Hasana Sifat** | **252-35-256** | Admin Module Development, Admin Authentication, Game Management (Add/Delete/View), Booking Management | **40%** |
-| **Md. Thowhidul Mehraj** | **252-35-256** | Admin Module Development, Booking System, Billing Calculation, File Handling, Schedule Management, Validation, Project Integration | **40%** |
-| **Rakib Hossian** | **252-35-251** | Customer Module Development, Customer Booking Interface, Schedule Viewing, Testing & Debugging | **20%** |
+| Team Member              | Student ID     | Contribution                                                                                                                                                                                       |
+| ------------------------ | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Abid Hasana Sifat**    | **252-35-256** | Developed the Admin Module, including game management features such as adding, deleting, and viewing sports, while contributing to the overall administration workflow.                            |
+| **Md. Thowhidul Mehraj** | **252-35-256** | Developed the Admin Authentication system, Booking Management, Billing Calculation, Schedule Management, Member Management, Booking Cancellation, and integrated the core project functionalities. |
+| **Rakib Hossian**        | **252-35-251** | Developed the Customer Module, including customer booking operations, schedule viewing, and participated in testing and debugging the overall application.                                         |
 
 ---
 
 # 📚 Learning Outcomes
 
-This project helped us understand:
+Through this project, we gained practical experience in:
 
-- File Handling in C
-- Structures
-- Modular Programming
-- Data Validation
-- Real-world Console Application Development
-- Sports Facility Management Logic
-- Booking Management System
-- Team Collaboration
-- Git & GitHub Workflow
-
----
-
-# 📄 License
-
-This project is developed for educational purposes as part of the **Software Engineering** course at **Daffodil International University (DIU)**.
+* File Handling in C
+* Structure-based Data Management
+* Modular Programming
+* Console Application Development
+* User Authentication
+* Data Validation
+* Booking Management Logic
+* Team Collaboration
+* Real-world Problem Solving
 
 ---
 
-# 🙏 Acknowledgement
+# 🎓 Academic Purpose
 
-We sincerely thank our course instructor and Daffodil International University for providing us the opportunity to develop this project as part of our academic learning.
+This project was developed as an academic project for the **Software Engineering** course at **Daffodil International University (DIU)**. It demonstrates how fundamental C programming concepts can be applied to build a practical management system that simulates real-world sports complex operations.
 
 ---
 
-# ⭐ Support
+## ⭐ Repository
 
-If you like this project,
+If you find this project helpful or interesting, consider giving it a **Star ⭐** on GitHub.
 
-⭐ Star this repository
-
-🍴 Fork it
-
-📢 Share it with others
-
-Happy Coding ❤️
