@@ -22,6 +22,19 @@ This project demonstrates practical implementation of:
 * Billing System
 
 ---
+<p align="center">
+
+![C](https://img.shields.io/badge/C-Programming-blue?style=for-the-badge&logo=c)
+![File Handling](https://img.shields.io/badge/File-Handling-success?style=for-the-badge)
+![Console Application](https://img.shields.io/badge/Console-Application-orange?style=for-the-badge)
+![Data Validation](https://img.shields.io/badge/Data-Validation-red?style=for-the-badge)
+![Authentication](https://img.shields.io/badge/Admin-Authentication-purple?style=for-the-badge)
+![Booking System](https://img.shields.io/badge/Booking-System-brightgreen?style=for-the-badge)
+![Billing](https://img.shields.io/badge/Auto-Billing-blueviolet?style=for-the-badge)
+![Schedule Tracking](https://img.shields.io/badge/Schedule-Tracking-yellow?style=for-the-badge)
+![File System](https://img.shields.io/badge/Text-File%20Storage-lightgrey?style=for-the-badge)
+
+</p>
 
 # 🎯 Project Objectives
 
