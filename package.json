@@ -1,15 +1,25 @@
 {
+<<<<<<< HEAD
   "name": "nodejs",
+=======
+  "name": "mongose1",
+>>>>>>> cf7309d287a580518f72616cbd4e775d799d67fe
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "dev": "nodemon src/index.js",
+    "type" : "module"
+>>>>>>> cf7309d287a580518f72616cbd4e775d799d67fe
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "express": "^5.2.1",
@@ -17,5 +27,14 @@
     "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.8.0"
+=======
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+>>>>>>> cf7309d287a580518f72616cbd4e775d799d67fe
   }
 }
